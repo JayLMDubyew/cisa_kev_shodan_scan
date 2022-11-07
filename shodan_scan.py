@@ -25,6 +25,7 @@ vulns = get_cisa_kevs()
 x = 0
 for i in vulns['vulnerabilities']:
     #print(i['cveID'])
+    # debug shenanigans ensue
     cve = i['cveID']
 
     if x==10:
