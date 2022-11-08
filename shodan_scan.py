@@ -63,7 +63,7 @@ def format_shodan_output(json_response, cve, file):
 
 
 vulns = get_cisa_kevs()
-x = 0
+
 with open("shodan_output.csv", 'w') as f:
     f.write("CVE, ORG, ISP, ADDRESS, HOSTNAMES, OS, PRODUCT\n")
     for i in vulns['vulnerabilities']:
